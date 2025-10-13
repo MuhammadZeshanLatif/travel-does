@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Travel Dose | Pakistan's Natural Beauty</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar bg-dark text-white py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <i class="fas fa-phone me-2"></i>
+                    <span>+92 300 1234567</span>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-envelope me-2"></i>
+                    <span>info@traveldose.pk</span>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    <span>Lahore, Pakistan</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-leaf text-success me-2 fs-3"></i>
+                <span class="fw-bold fs-4">Travel Dose</span>
+                <small class="text-muted ms-2"></small>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-semibold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Tours
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tours.html">All Tours</a></li>
+                            <li><a class="dropdown-item" href="tours.html#north">Northern Pakistan</a></li>
+                            <li><a class="dropdown-item" href="tours.html#south">Southern Pakistan</a></li>
+                            <li><a class="dropdown-item" href="tours.html#urban">Urban Nature Camps</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-success btn-sm rounded-pill px-4">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <p>Capturing Pakistan's Natural Beauty</p>
+        </div>
+    </section>
+
+    <!-- Gallery Stats -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <h4 class="text-success fw-bold mb-1">500+</h4>
+                    <small class="text-muted">Photos</small>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-success fw-bold mb-1">50+</h4>
+                    <small class="text-muted">Destinations</small>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-success fw-bold mb-1">100+</h4>
+                    <small class="text-muted">Happy Travelers</small>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-success fw-bold mb-1">5</h4>
+                    <small class="text-muted">Years Experience</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <!-- <section class="py-4">
+        <div class="container">
+            <div class="tour-filter">
+                <div class="text-center mb-4">
+                    <h4 class="fw-bold">Filter by Category</h4>
+                    <p class="text-muted">Click on any category to filter photos</p>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center" id="filterButtons">
+                    <button class="filter-btn active" data-filter="all">All Photos</button>
+                    <button class="filter-btn" data-filter="mountains">🏔️ Mountains</button>
+                    <button class="filter-btn" data-filter="deserts">🏜️ Deserts</button>
+                    <button class="filter-btn" data-filter="culture">🏛️ Culture</button>
+                    <button class="filter-btn" data-filter="wildlife">🦅 Wildlife</button>
+                    <button class="filter-btn" data-filter="lakes">🏞️ Lakes</button>
+                    <button class="filter-btn" data-filter="cities">🏙️ Cities</button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Gallery Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Initial 15 photos (5 rows x 3 columns) -->
+                <div class="gallery-item visible" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Hunza Valley">
+                    <div class="gallery-overlay">
+                        <h5>Hunza Valley</h5>
+                        <p>Majestic mountains and crystal-clear lakes</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item visible" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop" alt="Swat Valley">
+                    <div class="gallery-overlay">
+                        <h5>Swat Valley</h5>
+                        <p>The Switzerland of Pakistan</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item visible" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=400&fit=crop" alt="Chitral Valley">
+                    <div class="gallery-overlay">
+                        <h5>Chitral Valley</h5>
+                        <p>Remote beauty and traditional culture</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item visible" data-category="deserts">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Cholistan Desert">
+                    <div class="gallery-overlay">
+                        <h5>Cholistan Desert</h5>
+                        <p>Golden dunes and ancient forts</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item visible" data-category="deserts">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop" alt="Makran Coast">
+                    <div class="gallery-overlay">
+                        <h5>Makran Coast</h5>
+                        <p>Pristine beaches and marine life</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item visible" data-category="deserts">
+                    <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=600&h=400&fit=crop" alt="Desert Camping">
+                    <div class="gallery-overlay">
+                        <h5>Desert Camping</h5>
+                        <p>Stargazing under clear skies</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item visible" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1487730116645-74489c95b41b?w=600&h=400&fit=crop" alt="Local Community">
+                    <div class="gallery-overlay">
+                        <h5>Local Communities</h5>
+                        <p>Authentic cultural experiences</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item visible" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&h=400&fit=crop" alt="Traditional Crafts">
+                    <div class="gallery-overlay">
+                        <h5>Traditional Crafts</h5>
+                        <p>Handmade artifacts and local skills</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item visible" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&h=400&fit=crop" alt="Local Festival">
+                    <div class="gallery-overlay">
+                        <h5>Local Festivals</h5>
+                        <p>Celebrating cultural diversity</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item visible" data-category="wildlife">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop" alt="Wildlife Conservation">
+                    <div class="gallery-overlay">
+                        <h5>Wildlife Conservation</h5>
+                        <p>Protecting Pakistan's natural heritage</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item visible" data-category="wildlife">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop" alt="Bird Watching">
+                    <div class="gallery-overlay">
+                        <h5>Bird Watching</h5>
+                        <p>Observing Pakistan's avian diversity</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item visible" data-category="lakes">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Attabad Lake">
+                    <div class="gallery-overlay">
+                        <h5>Attabad Lake</h5>
+                        <p>Crystal clear waters in Hunza</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item visible" data-category="lakes">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop" alt="Saif-ul-Malook">
+                    <div class="gallery-overlay">
+                        <h5>Saif-ul-Malook Lake</h5>
+                        <p>Mythical beauty in Kaghan Valley</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item visible" data-category="cities">
+                    <img src="https://images.unsplash.com/photo-1487730116645-74489c95b41b?w=600&h=400&fit=crop" alt="Lahore Heritage">
+                    <div class="gallery-overlay">
+                        <h5>Lahore Heritage</h5>
+                        <p>Historical monuments and culture</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item visible" data-category="cities">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&h=400&fit=crop" alt="Karachi Skyline">
+                    <div class="gallery-overlay">
+                        <h5>Karachi Skyline</h5>
+                        <p>Modern city with rich heritage</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden photos (will be shown on Load More) -->
+                <div class="gallery-item hidden" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&h=400&fit=crop" alt="Mountain Trek">
+                    <div class="gallery-overlay">
+                        <h5>Mountain Trekking</h5>
+                        <p>Adventure in the high peaks</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&h=400&fit=crop" alt="Nanga Parbat">
+                    <div class="gallery-overlay">
+                        <h5>Nanga Parbat</h5>
+                        <p>Killer Mountain's breathtaking view</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="K2 Base Camp">
+                    <div class="gallery-overlay">
+                        <h5>K2 Base Camp</h5>
+                        <p>World's second highest peak</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="deserts">
+                    <img src="https://images.unsplash.com/photo-1464822759844-d150baec8a96?w=600&h=400&fit=crop" alt="Thar Desert">
+                    <div class="gallery-overlay">
+                        <h5>Thar Desert</h5>
+                        <p>Golden sands of Sindh</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="deserts">
+                    <img src="https://images.unsplash.com/photo-1464822759844-d150baec8a96?w=600&h=400&fit=crop" alt="Derawar Fort">
+                    <div class="gallery-overlay">
+                        <h5>Derawar Fort</h5>
+                        <p>Ancient fortress in the desert</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="deserts">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop" alt="Hingol National Park">
+                    <div class="gallery-overlay">
+                        <h5>Hingol National Park</h5>
+                        <p>Desert landscape with unique formations</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&h=400&fit=crop" alt="Baltit Fort">
+                    <div class="gallery-overlay">
+                        <h5>Baltit Fort</h5>
+                        <p>Ancient architecture in Hunza</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1487730116645-74489c95b41b?w=600&h=400&fit=crop" alt="Mohenjo Daro">
+                    <div class="gallery-overlay">
+                        <h5>Mohenjo Daro</h5>
+                        <p>Ancient Indus Valley Civilization</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&h=400&fit=crop" alt="Taxila Ruins">
+                    <div class="gallery-overlay">
+                        <h5>Taxila Ruins</h5>
+                        <p>Buddhist archaeological site</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="wildlife">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop" alt="Snow Leopard">
+                    <div class="gallery-overlay">
+                        <h5>Wildlife Protection</h5>
+                        <p>Conservation efforts for endangered species</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="wildlife">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop" alt="Markhor">
+                    <div class="gallery-overlay">
+                        <h5>Markhor</h5>
+                        <p>Pakistan's national animal</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="wildlife">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop" alt="Himalayan Brown Bear">
+                    <div class="gallery-overlay">
+                        <h5>Himalayan Brown Bear</h5>
+                        <p>Rare wildlife in northern Pakistan</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="lakes">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Rush Lake">
+                    <div class="gallery-overlay">
+                        <h5>Rush Lake</h5>
+                        <p>High-altitude beauty in Nagar Valley</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="lakes">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop" alt="Manchar Lake">
+                    <div class="gallery-overlay">
+                        <h5>Manchar Lake</h5>
+                        <p>Largest freshwater lake</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="lakes">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Shandur Lake">
+                    <div class="gallery-overlay">
+                        <h5>Shandur Lake</h5>
+                        <p>Roof of the world</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="cities">
+                    <img src="https://images.unsplash.com/photo-1487730116645-74489c95b41b?w=600&h=400&fit=crop" alt="Islamabad">
+                    <div class="gallery-overlay">
+                        <h5>Islamabad</h5>
+                        <p>Capital city's natural beauty</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="cities">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&h=400&fit=crop" alt="Peshawar">
+                    <div class="gallery-overlay">
+                        <h5>Peshawar</h5>
+                        <p>Gateway to the Khyber Pass</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="cities">
+                    <img src="https://images.unsplash.com/photo-1487730116645-74489c95b41b?w=600&h=400&fit=crop" alt="Multan">
+                    <div class="gallery-overlay">
+                        <h5>Multan</h5>
+                        <p>City of Saints and Sufis</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&h=400&fit=crop" alt="Fairy Meadows">
+                    <div class="gallery-overlay">
+                        <h5>Fairy Meadows</h5>
+                        <p>Heaven on earth</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item hidden" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Deosai Plains">
+                    <div class="gallery-overlay">
+                        <h5>Deosai Plains</h5>
+                        <p>Land of the giants</p>
+                        <div class="gallery-actions">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <!-- <div class="text-center mt-5">
+                <button class="btn btn-success btn-lg rounded-pill px-5" id="loadMoreBtn">
+                    <i class="fas fa-plus me-2"></i>Load More Photos
+                </button>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+            </div>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" id="lightboxPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox-next" id="lightboxNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4">
+                        <i class="fas fa-leaf text-success me-2"></i>Travel Dose
+                        <small class="text-muted d-block"></small>
+                    </h4>
+                    <p class="mb-4">Pakistan's pioneering ecotourism company, offering sustainable travel experiences that benefit both travelers and local communities.</p>
+                    <div class="social-links">
+                        <a href="https://youtube.com/@traveldose" target="_blank" class="text-white me-3">
+                            <i class="fab fa-youtube fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-instagram fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="fab fa-tiktok fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="fw-bold mb-4">Destinations</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="tours.html#north" class="text-white text-decoration-none">Northern Pakistan</a></li>
+                        <li class="mb-2"><a href="tours.html#south" class="text-white text-decoration-none">Southern Pakistan</a></li>
+                        <li class="mb-2"><a href="tours.html#urban" class="text-white text-decoration-none">Urban Nature Camps</a></li>
+                        <li class="mb-2"><a href="tours.html" class="text-white text-decoration-none">All Tours</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="fw-bold mb-4">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="index.html#sustainability" class="text-white text-decoration-none">Sustainability</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Lahore, Pakistan
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone me-2"></i>
+                            +92 300 1234567
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@traveldose.pk
+                        </li>
+                        <li class="mb-3">
+                            <i class="fab fa-youtube me-2"></i>
+                            YouTube: @traveldose
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Travel Dose (). All rights reserved. 
+                   <span class="text-success">Explore Pakistan Naturally</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

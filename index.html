@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Dose - Explore Pakistan Naturally | Eco-Tourism & Adventure Travel</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar bg-dark text-white py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <i class="fas fa-phone me-2"></i>
+                    <span>+92 300 1234567</span>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-envelope me-2"></i>
+                    <span>info@traveldose.pk</span>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    <span>Lahore, Pakistan</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="fas fa-leaf text-success me-2 fs-3"></i>
+                <span class="fw-bold fs-4">Travel Dose</span>
+                <small class="text-muted ms-2"></small>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-semibold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Tours
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tours.html">All Tours</a></li>
+                            <li><a class="dropdown-item" href="./north.html">Northern Pakistan</a></li>
+                            <li><a class="dropdown-item" href="./south.html">Southern Pakistan</a></li>
+                            <li><a class="dropdown-item" href="./urban.html">Urban Nature Camps</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./blog.html">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- CTA Button -->
+                <a href="contact.html" class="btn btn-success btn-sm rounded-pill px-4">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section position-relative">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop" 
+                 alt="Pakistan Adventure" class="w-100 h-100 object-cover">
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="hero-content text-white">
+                        <h1 class="display-3 fw-bold mb-4">Explore Pakistan Naturally</h1>
+                        <p class="lead mb-4">Travel with Purpose • Eco-friendly & Culturally Rich Adventures</p>
+                        <div class="hero-badges mb-4">
+                            <span class="badge bg-success me-2 mb-2">🌱 100% Eco-Friendly</span>
+                            <span class="badge bg-success me-2 mb-2">🏔️ Authentic Experiences</span>
+                            <span class="badge bg-success mb-2">👥 Community Impact</span>
+                        </div>
+                        <a href="#tours" class="btn btn-success btn-lg px-5 py-3 mt-2 rounded-pill me-3">Discover Tours</a>
+                        <a href="https://youtube.com/@traveldose" target="_blank" class="btn story-btn mt-2 btn-outline-light btn-lg px-4 py-3 rounded-pill">
+                            <i class="fab fa-youtube me-2"></i>Watch Our Story
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Search Bar -->
+        <!-- <div class="search-bar-container">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="search-bar bg-white rounded-3 shadow-lg p-4">
+                            <div class="row g-3">
+                                <div class="col-md-3">
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-transparent border-0">
+                                            <i class="fas fa-map-marker-alt text-success"></i>
+                                        </span>
+                                        <select class="form-select border-0">
+                                            <option>Choose Destination</option>
+                                            <option>Hunza Valley</option>
+                                            <option>Swat Valley</option>
+                                            <option>Chitral</option>
+                                            <option>Cholistan Desert</option>
+                                            <option>Makran Coast</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-transparent border-0">
+                                            <i class="fas fa-hiking text-success"></i>
+                                        </span>
+                                        <select class="form-select border-0">
+                                            <option>Tour Type</option>
+                                            <option>Eco-trekking</option>
+                                            <option>Cultural Immersion</option>
+                                            <option>Wildlife Observation</option>
+                                            <option>Community Homestay</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-transparent border-0">
+                                            <i class="fas fa-clock text-success"></i>
+                                        </span>
+                                        <select class="form-select border-0">
+                                            <option>Duration</option>
+                                            <option>3 Days</option>
+                                            <option>5 Days</option>
+                                            <option>7 Days</option>
+                                            <option>10+ Days</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-transparent border-0">
+                                            <i class="fas fa-calendar text-success"></i>
+                                        </span>
+                                        <input type="date" class="form-control border-0">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn-success w-100 rounded-pill">Search Tours</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- Why Choose Travel Dose Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">
+                        Why Choose <span class="text-success">Travel Dose</span>?
+                    </h2>
+                    <p class="lead mb-4">
+                        We're Pakistan's pioneering ecotourism company, blending adventure with environmental responsibility. 
+                        Our mission is to showcase Pakistan's natural beauty while supporting local communities and 
+                        promoting sustainable travel practices.
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="feature-box text-center p-3">
+                                <i class="fas fa-leaf text-success fs-2 mb-2"></i>
+                                <h6>Zero Plastic Policy</h6>
+                                <small class="text-muted">Eco-friendly tours</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="feature-box text-center p-3">
+                                <i class="fas fa-tree text-success fs-2 mb-2"></i>
+                                <h6>Tree Planting</h6>
+                                <small class="text-muted">One tree per traveler</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="activity-card bg-white p-4 rounded-3 shadow-sm text-center">
+                                <i class="fas fa-mountain text-success fs-3 mb-3"></i>
+                                <h6>Eco-guided Trekking</h6>
+                                <small class="text-muted">Nature reserves</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="activity-card bg-white p-4 rounded-3 shadow-sm text-center">
+                                <i class="fas fa-home text-success fs-3 mb-3"></i>
+                                <h6>Community Homestays</h6>
+                                <small class="text-muted">Authentic experiences</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="activity-card bg-white p-4 rounded-3 shadow-sm text-center">
+                                <i class="fas fa-camera text-success fs-3 mb-3"></i>
+                                <h6>Cultural Immersion</h6>
+                                <small class="text-muted">Heritage & festivals</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="activity-card bg-white p-4 rounded-3 shadow-sm text-center">
+                                <i class="fas fa-binoculars text-success fs-3 mb-3"></i>
+                                <h6>Wildlife Observation</h6>
+                                <small class="text-muted">Nature expeditions</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="activity-card bg-white p-4 rounded-3 shadow-sm text-center">
+                                <i class="fas fa-graduation-cap text-success fs-3 mb-3"></i>
+                                <h6>Educational Tours</h6>
+                                <small class="text-muted">NGOs & universities</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="activity-card bg-white p-4 rounded-3 shadow-sm text-center">
+                                <i class="fas fa-play-circle text-success fs-3 mb-3"></i>
+                                <h6>YouTube Content</h6>
+                                <small class="text-muted">Travel inspiration</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" 
+                         alt="Sustainable Travel" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-5">
+                        <span class="badge bg-success mb-3">Our Mission</span>
+                        <h2 class="display-5 fw-bold mb-4">Pakistan's Most Trusted Ecotourism Brand</h2>
+                        <p class="lead mb-4">
+                            We're building a sustainable future for tourism in Pakistan by creating meaningful connections 
+                            between travelers and local communities while protecting our natural heritage.
+                        </p>
+                        <div class="mission-stats d-flex mb-4">
+                            <div class="stat-item text-center mx-4">
+                                <h4 class="text-success fw-bold m-1">1000+</h4>
+                                <small>Website Bookings</small>
+                            </div>
+                            <div class="stat-item text-center mx-4">
+                                <h4 class="text-success fw-bold mb-1">50K+</h4>
+                                <small>YouTube Subscribers</small>
+                            </div>
+                            <div class="stat-item text-center mx-4">
+                                <h4 class="text-success fw-bold mb-1">5</h4>
+                                <small>Years Vision</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations Section -->
+    <section id="tours" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-success mb-3">Our Destinations</span>
+                <h2 class="display-5 fw-bold">Explore Pakistan's Hidden Gems</h2>
+                <p class="lead">From mountain peaks to desert dunes, discover authentic experiences across Pakistan</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="destination-card bg-white rounded-3 shadow-sm overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" 
+                                 alt="Northern Pakistan" class="w-100">
+                            <span class="badge bg-warning position-absolute top-0 end-0 m-3">Popular</span>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-2">Northern Pakistan</h5>
+                            <p class="text-muted mb-3">Hunza, Swat, Chitral - Mountains & Culture</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <!-- <span class="text-success fw-bold">From PKR 45,000</span> -->
+                                <small class="text-muted"><i class="fas fa-clock me-1"></i>5-7 Days</small>
+                            </div>
+                            <a href="./north.html" class="btn btn-success w-100 rounded-pill">Explore North</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="destination-card bg-white rounded-3 shadow-sm overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" 
+                                 alt="Southern Pakistan" class="w-100">
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-2">Southern Pakistan</h5>
+                            <p class="text-muted mb-3">Cholistan, Hingol, Makran Coast - Deserts & Beaches</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <!-- <span class="text-success fw-bold">From PKR 28,000</span> -->
+                                <small class="text-muted"><i class="fas fa-clock me-1"></i>3-5 Days</small>
+                            </div>
+                            <a href="./south.html" class="btn btn-success w-100 rounded-pill">Explore South</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="destination-card bg-white rounded-3 shadow-sm overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop" 
+                                 alt="Urban Nature Camps" class="w-100">
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-2">Urban Nature Camps</h5>
+                            <p class="text-muted mb-3">Nature experiences for children & families</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <!-- <span class="text-success fw-bold">From PKR 8,000</span> -->
+                                <small class="text-muted"><i class="fas fa-clock me-1"></i>1-2 Days</small>
+                            </div>
+                            <a href="./urban.html" class="btn btn-success w-100 rounded-pill">Urban Camps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="py-5 bg-success text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Our Sustainability Commitment</h2>
+                <p class="lead">Making a positive impact on environment and communities</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="sustainability-card text-center p-4">
+                        <i class="fas fa-ban text-white fs-1 mb-3"></i>
+                        <h5>Zero Plastic Policy</h5>
+                        <p class="mb-0">No single-use plastics on any of our tours</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="sustainability-card text-center p-4">
+                        <i class="fas fa-seedling text-white fs-1 mb-3"></i>
+                        <h5>Tree Planting</h5>
+                        <p class="mb-0">One tree planted for every traveler</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="sustainability-card text-center p-4">
+                        <i class="fas fa-users text-white fs-1 mb-3"></i>
+                        <h5>Local Employment</h5>
+                        <p class="mb-0">Training and hiring local youth as guides</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="sustainability-card text-center p-4">
+                        <i class="fas fa-heart text-white fs-1 mb-3"></i>
+                        <h5>Wildlife Conservation</h5>
+                        <p class="mb-0">Partnering with conservation organizations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- YouTube Channel Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="video-placeholder bg-dark rounded-3 d-flex align-items-center justify-content-center" style="height: 300px;">
+                        <div class="text-center text-white">
+                            <i class="fab fa-youtube fs-1 mb-3"></i>
+                            <h5>Watch Our Travel Stories</h5>
+                            <p>Subscribe to our YouTube channel for authentic travel content</p>
+                            <a href="https://youtube.com/@traveldose" target="_blank" class="btn btn-danger rounded-pill">
+                                <i class="fab fa-youtube me-2"></i>Subscribe Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h3 class="fw-bold mb-4">Join Our YouTube Community</h3>
+                    <p class="lead mb-4">
+                        Get inspired by our travel videos showcasing Pakistan's natural beauty, 
+                        cultural richness, and sustainable tourism practices.
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="stat-box text-center p-3">
+                                <h4 class="text-success fw-bold">50K+</h4>
+                                <small>Subscribers</small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-box text-center p-3">
+                                <h4 class="text-success fw-bold">500+</h4>
+                                <small>Videos</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="py-5 bg-success text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="fw-bold mb-3">Ready to Explore Pakistan Naturally?</h3>
+                    <p class="lead mb-0">Book your eco-friendly adventure today and make a positive impact on local communities.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-light btn-lg px-4 rounded-pill me-3">Book Now</a>
+                    <a href="https://wa.me/923001234567" target="_blank" class="btn btn-outline-light btn-lg px-4 rounded-pill">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4">
+                        <i class="fas fa-leaf text-success me-2"></i>Travel Dose
+                        <small class="text-muted d-block"></small>
+                    </h4>
+                    <p class="mb-4">Pakistan's pioneering ecotourism company, offering sustainable travel experiences that benefit both travelers and local communities.</p>
+                    <div class="social-links">
+                        <a href="https://youtube.com/@traveldose" target="_blank" class="text-white me-3">
+                            <i class="fab fa-youtube fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-instagram fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="fab fa-tiktok fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="fw-bold mb-4">Destinations</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#north" class="text-white text-decoration-none">Northern Pakistan</a></li>
+                        <li class="mb-2"><a href="#south" class="text-white text-decoration-none">Southern Pakistan</a></li>
+                        <li class="mb-2"><a href="#urban" class="text-white text-decoration-none">Urban Nature Camps</a></li>
+                        <li class="mb-2"><a href="tours.html" class="text-white text-decoration-none">All Tours</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="fw-bold mb-4">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="#sustainability" class="text-white text-decoration-none">Sustainability</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Lahore, Pakistan
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone me-2"></i>
+                            +92 300 1234567
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@traveldose.pk
+                        </li>
+                        <li class="mb-3">
+                            <i class="fab fa-youtube me-2"></i>
+                            YouTube: @traveldose
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Travel Dose (). All rights reserved. 
+                   <span class="text-success">Explore Pakistan Naturally</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>

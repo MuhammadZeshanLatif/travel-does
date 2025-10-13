@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Dose | Book Your Eco-Adventure</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar bg-dark text-white py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <i class="fas fa-phone me-2"></i>
+                    <span>+92 300 1234567</span>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-envelope me-2"></i>
+                    <span>info@traveldose.pk</span>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    <span>Lahore, Pakistan</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-leaf text-success me-2 fs-3"></i>
+                <span class="fw-bold fs-4">Travel Dose</span>
+                <small class="text-muted ms-2"></small>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-semibold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Tours
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tours.html">All Tours</a></li>
+                            <li><a class="dropdown-item" href="tours.html#north">Northern Pakistan</a></li>
+                            <li><a class="dropdown-item" href="tours.html#south">Southern Pakistan</a></li>
+                            <li><a class="dropdown-item" href="tours.html#urban">Urban Nature Camps</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-success btn-sm rounded-pill px-4">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero mt-0">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Ready to Start Your Eco-Adventure?</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="py-5">
+        <div class="container">
+            <div class="contact-info">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="text-center p-4">
+                            <i class="fas fa-phone text-success fs-1 mb-3"></i>
+                            <h5 class="fw-bold">Phone</h5>
+                            <p class="mb-2">+92 300 1234567</p>
+                            <small class="text-muted">Available 9 AM - 6 PM</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-center p-4">
+                            <i class="fas fa-envelope text-success fs-1 mb-3"></i>
+                            <h5 class="fw-bold">Email</h5>
+                            <p class="mb-2">info@traveldose.pk</p>
+                            <small class="text-muted">We reply within 24 hours</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-center p-4">
+                            <i class="fas fa-map-marker-alt text-success fs-1 mb-3"></i>
+                            <h5 class="fw-bold">Location</h5>
+                            <p class="mb-2">Lahore, Pakistan</p>
+                            <small class="text-muted">Headquarters</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <div class="text-center mb-5">
+                            <h2 class="fw-bold">Book Your Adventure</h2>
+                            <p class="lead">Tell us about your dream eco-tourism experience</p>
+                        </div>
+                        
+                        <form id="bookingForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number *</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="travelers" class="form-label">Number of Travelers *</label>
+                                    <select class="form-select" id="travelers" required>
+                                        <option value="">Select</option>
+                                        <option value="1">1 Person</option>
+                                        <option value="2">2 People</option>
+                                        <option value="3-5">3-5 People</option>
+                                        <option value="6-10">6-10 People</option>
+                                        <option value="10+">10+ People</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="destination" class="form-label">Preferred Destination *</label>
+                                    <select class="form-select" id="destination" required>
+                                        <option value="">Select Destination</option>
+                                        <option value="hunza">Hunza Valley</option>
+                                        <option value="swat">Swat Valley</option>
+                                        <option value="chitral">Chitral</option>
+                                        <option value="cholistan">Cholistan Desert</option>
+                                        <option value="makran">Makran Coast</option>
+                                        <option value="urban">Urban Nature Camp</option>
+                                        <option value="custom">Custom Tour</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="date" class="form-label">Preferred Date *</label>
+                                    <input type="date" class="form-control" id="date" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="duration" class="form-label">Duration</label>
+                                    <select class="form-select" id="duration">
+                                        <option value="">Select Duration</option>
+                                        <option value="1-2">1-2 Days</option>
+                                        <option value="3-5">3-5 Days</option>
+                                        <option value="6-10">6-10 Days</option>
+                                        <option value="10+">10+ Days</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="budget" class="form-label">Budget Range</label>
+                                    <select class="form-select" id="budget">
+                                        <option value="">Select Budget</option>
+                                        <option value="under-50k">Under PKR 50,000</option>
+                                        <option value="50k-100k">PKR 50,000 - 100,000</option>
+                                        <option value="100k-200k">PKR 100,000 - 200,000</option>
+                                        <option value="200k+">PKR 200,000+</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Additional Requirements</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Tell us about any special requirements, dietary restrictions, or specific activities you're interested in..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            Subscribe to our newsletter for eco-tourism updates and special offers
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-success btn-lg px-5 rounded-pill">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Booking Request
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="formMessage" class="form-message mt-3"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp CTA -->
+    <section class="py-5 bg-success text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="fw-bold mb-3">Need Quick Assistance?</h3>
+                    <p class="lead mb-0">Chat with us on WhatsApp for instant support and booking assistance.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="https://wa.me/923001234567" target="_blank" class="btn btn-light btn-lg px-4 rounded-pill">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-4">
+                        <i class="fas fa-leaf text-success me-2"></i>Travel Dose
+                        <small class="text-muted d-block"></small>
+                    </h4>
+                    <p class="mb-4">Pakistan's pioneering ecotourism company, offering sustainable travel experiences that benefit both travelers and local communities.</p>
+                    <div class="social-links">
+                        <a href="https://youtube.com/@traveldose" target="_blank" class="text-white me-3">
+                            <i class="fab fa-youtube fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-instagram fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white me-3">
+                            <i class="fab fa-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white">
+                            <i class="fab fa-tiktok fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="fw-bold mb-4">Destinations</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="tours.html#north" class="text-white text-decoration-none">Northern Pakistan</a></li>
+                        <li class="mb-2"><a href="tours.html#south" class="text-white text-decoration-none">Southern Pakistan</a></li>
+                        <li class="mb-2"><a href="tours.html#urban" class="text-white text-decoration-none">Urban Nature Camps</a></li>
+                        <li class="mb-2"><a href="tours.html" class="text-white text-decoration-none">All Tours</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="fw-bold mb-4">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="index.html#sustainability" class="text-white text-decoration-none">Sustainability</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-4">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Lahore, Pakistan
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone me-2"></i>
+                            +92 300 1234567
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2"></i>
+                            info@traveldose.pk
+                        </li>
+                        <li class="mb-3">
+                            <i class="fab fa-youtube me-2"></i>
+                            YouTube: @traveldose
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Travel Dose (). All rights reserved. 
+                   <span class="text-success">Explore Pakistan Naturally</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

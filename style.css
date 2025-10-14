@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation */
 .navbar {
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   transition: all 0.3s ease;
 }
 
@@ -860,9 +860,6 @@ section {
 .gallery-item.animate-in {
   animation: fadeInScale 0.5s ease forwards;
 }
-a.btn.btn-outline-light.story-btn.btn-lg.px-4.py-3.rounded-pill {
-  border: 1px solid white;
-}
 
 /* Gallery Hidden Items */
 .gallery-item.hidden {
@@ -920,5 +917,24 @@ a.btn.btn-outline-light.story-btn.btn-lg.px-4.py-3.rounded-pill {
 @media(max-width:768px){
   .top-bar.bg-dark.text-white.py-2 {
       display:none;
+  }
+}
+
+a.btn.btn-outline-light.story-btn.btn-lg.px-4.py-3.rounded-pill {
+  background: #ffffffde;
+  color: green;
+}
+a.btn.btn-outline-light.story-btn.btn-lg.px-4.py-3.rounded-pill:hover {
+  background: white;
+}
+
+a.btn.btn-outline-light.WhatsApp-btn.btn-lg.px-4.rounded-pill {
+  background: #ffffffde;
+  color: green;
+} 
+
+@media(max-width:990px){
+  .align-center-text{
+    text-align: center;
   }
 }

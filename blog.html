@@ -1,176 +1,333 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
-    <title>Eco-Insights Blog - Travel Dose | Sustainable Travel Tips & Stories</title>
-    <meta name="description" content="Read our eco-travel blog for sustainable tourism tips, conservation stories, and responsible travel insights from Pakistan's premier ecotourism company.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo">
-          <img src="/public/traveldoes-log0.jpg" alt="Travel Dose Logo">
-          <span>Travel Dose</span>
-        </div>
-        <div class="nav-menu" id="navMenu">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About Us</a>
-          <a href="tours.html" class="nav-link">Tours</a>
-          <a href="gallery.html" class="nav-link">Gallery</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-          <a href="blog.html" class="nav-link active">Eco-Insights</a>
-          <a href="contact.html" class="btn-primary">Book Now</a>
-        </div>
-        <button class="mobile-toggle" id="mobileToggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </nav>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eco-Insights Blog | Travel Dose – Sustainable Travel Tips & Stories</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Top Contact Bar -->
+	<div class="top-bar bg-dark text-white py-2">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-4">
+					<i class="fas fa-phone me-2"></i>
+					<span>+92 300 1234567</span>
+				</div>
+				<div class="col-md-4">
+					<i class="fas fa-envelope me-2"></i>
+					<span>info@traveldose.pk</span>
+				</div>
+				<div class="col-md-4">
+					<i class="fas fa-map-marker-alt me-2"></i>
+					<span>Lahore, Pakistan</span>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <section class="page-hero">
-      <div class="hero-content">
-        <h1>Eco-Insights</h1>
-        <p>Sustainable Travel Tips & Conservation Stories</p>
-      </div>
-    </section>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+		<div class="container">
+			<a class="navbar-brand d-flex align-items-center" href="./index.html">
+				<img src="./assets/images/headerlogo.webp" width="200" alt="">
+				<small class="text-muted ms-2"></small>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-    <section id="blog" class="blog">
-      <div class="container">
-        <div class="blog-grid">
-          <article class="blog-card featured">
-            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=400&fit=crop" alt="Sustainable Tourism" class="blog-image">
-            <div class="blog-content">
-              <div class="blog-meta">
-                <span class="blog-date">January 15, 2025</span>
-                <span class="blog-category">Sustainability</span>
-              </div>
-              <h2 class="blog-title">The Future of Sustainable Tourism in Pakistan</h2>
-              <p class="blog-excerpt">Discover how Pakistan is leading the way in eco-friendly travel and what you can do to make your adventures more sustainable...</p>
-              <a href="#" class="read-more">Read More</a>
-            </div>
-          </article>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto me-4">
+					<li class="nav-item">
+						<a class="nav-link fw-semibold" href="./index.html#home">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link fw-semibold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+							Tours
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="tours.html">All Tours</a></li>
+							<li><a class="dropdown-item" href="./north.html">Northern Pakistan</a></li>
+							<li><a class="dropdown-item" href="./south.html">Southern Pakistan</a></li>
+							<li><a class="dropdown-item" href="./urban.html">Urban Nature Camps</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link fw-semibold" href="./about.html">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link fw-semibold" href="./gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link fw-semibold active" href="./blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link fw-semibold" href="contact.html">Contact</a>
+					</li>
+				</ul>
+				<a href="contact.html" class="btn btn-success btn-sm rounded-pill px-4">Book Now</a>
+			</div>
+		</div>
+	</nav>
 
-          <article class="blog-card">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop" alt="Hunza Valley" class="blog-image">
-            <div class="blog-content">
-              <div class="blog-meta">
-                <span class="blog-date">January 10, 2025</span>
-                <span class="blog-category">Destinations</span>
-              </div>
-              <h3 class="blog-title">Hunza Valley: A Model of Sustainable Living</h3>
-              <p class="blog-excerpt">Learn how the Hunza people have maintained their pristine environment for centuries...</p>
-              <a href="#" class="read-more">Read More</a>
-            </div>
-          </article>
+	<!-- Hero -->
+	<section class="position-relative" style="margin-top:0;">
+		<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1920&h=600&fit=crop" class="w-100" alt="Eco Insights">
+		<div class="position-absolute top-0 start-0 w-100 h-100" style="background:linear-gradient(180deg,rgba(0,0,0,.45),rgba(0,0,0,.25))"></div>
+		<div class="container position-absolute top-50 start-50 translate-middle text-center text-white">
+			<h1 class="display-4 fw-bold">Eco‑Insights</h1>
+			<p class="lead mb-0">Sustainable travel tips, conservation stories, and responsible tourism</p>
+		</div>
+	</section>
 
-          <article class="blog-card">
-            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=250&fit=crop" alt="Wildlife Conservation" class="blog-image">
-            <div class="blog-content">
-              <div class="blog-meta">
-                <span class="blog-date">January 8, 2025</span>
-                <span class="blog-category">Conservation</span>
-              </div>
-              <h3 class="blog-title">Protecting Pakistan's Unique Wildlife</h3>
-              <p class="blog-excerpt">Our efforts in wildlife conservation and how travelers can contribute...</p>
-              <a href="#" class="read-more">Read More</a>
-            </div>
-          </article>
+	<!-- Search + Categories -->
+	<section class="py-5">
+		<div class="container">
+			<div class="row g-3 align-items-center mb-4">
+				<div class="col-lg-6">
+					<div class="input-group shadow-sm">
+						<span class="input-group-text bg-white border-0"><i class="fas fa-search text-success"></i></span>
+						<input type="text" class="form-control border-0" placeholder="Search articles…">
+					</div>
+				</div>
+				<div class="col-lg-6 d-flex flex-wrap justify-content-lg-end">
+					<a href="#" class="btn filter-btn me-2 mb-2">All</a>
+					<a href="#" class="btn filter-btn me-2 mb-2">Sustainability</a>
+					<a href="#" class="btn filter-btn me-2 mb-2">Destinations</a>
+					<a href="#" class="btn filter-btn me-2 mb-2">Conservation</a>
+					<a href="#" class="btn filter-btn me-2 mb-2">Community</a>
+					<a href="#" class="btn filter-btn me-2 mb-2">Tips</a>
+				</div>
+			</div>
 
-          <article class="blog-card">
-            <img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=400&h=250&fit=crop" alt="Community Tourism" class="blog-image">
-            <div class="blog-content">
-              <div class="blog-meta">
-                <span class="blog-date">January 5, 2025</span>
-                <span class="blog-category">Community</span>
-              </div>
-              <h3 class="blog-title">Community-Based Tourism: Empowering Local Villages</h3>
-              <p class="blog-excerpt">How our tours directly benefit local communities and preserve cultural heritage...</p>
-              <a href="#" class="read-more">Read More</a>
-            </div>
-          </article>
+			<div class="row g-4">
+				<!-- Main Blog Grid -->
+				<div class="col-lg-8">
+					<div class="row g-4">
+						<!-- Featured -->
+						<div class="col-12">
+							<article class="blog-card featured bg-white rounded-3 overflow-hidden shadow-sm">
+								<div class="row g-0">
+									<div class="col-md-6">
+										<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=900&h=600&fit=crop" alt="Sustainable Tourism" class="w-100 h-100" style="object-fit:cover;">
+									</div>
+									<div class="col-md-6 d-flex">
+										<div class="p-4 d-flex flex-column">
+											<div class="blog-meta d-flex align-items-center gap-2">
+												<span class="blog-date">October 15, 2025</span>
+												<span class="blog-category">Sustainability</span>
+											</div>
+											<h2 class="h4 fw-bold">The Future of Sustainable Tourism in Pakistan</h2>
+											<p class="text-muted mb-4">How eco‑friendly travel is reshaping experiences and supporting communities—and how you can travel with purpose.</p>
+											<div class="mt-auto d-flex justify-content-between align-items-center">
+												<small class="text-muted"><i class="fas fa-clock me-1"></i>6 min read</small>
+												<a href="#" class="btn btn-success btn-sm rounded-pill">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</article>
+						</div>
 
-          <article class="blog-card">
-            <img src="https://images.unsplash.com/photo-1464822759844-d150baec8a96?w=400&h=250&fit=crop" alt="Zero Waste Travel" class="blog-image">
-            <div class="blog-content">
-              <div class="blog-meta">
-                <span class="blog-date">January 3, 2025</span>
-                <span class="blog-category">Tips</span>
-              </div>
-              <h3 class="blog-title">Zero Waste Travel: Your Complete Guide</h3>
-              <p class="blog-excerpt">Practical tips for reducing your environmental impact while traveling...</p>
-              <a href="#" class="read-more">Read More</a>
-            </div>
-          </article>
+						<!-- Cards -->
+						<div class="col-md-6">
+							<article class="card blog-card h-100 shadow-sm">
+								<img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=533&fit=crop" class="card-img-top blog-image" alt="Hunza Valley">
+								<div class="card-body d-flex flex-column">
+									<div class="blog-meta">
+										<span class="blog-date">Oct 10, 2025</span>
+										<span class="blog-category">Destinations</span>
+									</div>
+									<h3 class="h5">Hunza Valley: A Model of Sustainable Living</h3>
+									<p class="text-muted mb-4">What we can learn from Hunza’s traditions, architecture, and low‑impact lifestyle.</p>
+									<div class="mt-auto d-flex justify-content-between align-items-center">
+										<small class="text-muted"><i class="fas fa-clock me-1"></i>4 min</small>
+										<a href="#" class="text-success fw-semibold text-decoration-none">Read More</a>
+									</div>
+								</div>
+							</article>
+						</div>
 
-          <article class="blog-card">
-            <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=400&h=250&fit=crop" alt="Tree Planting" class="blog-image">
-            <div class="blog-content">
-              <div class="blog-meta">
-                <span class="blog-date">January 1, 2025</span>
-                <span class="blog-category">Environment</span>
-              </div>
-              <h3 class="blog-title">Our Tree Planting Initiative: One Tree Per Traveler</h3>
-              <p class="blog-excerpt">Learn about our commitment to reforestation and environmental restoration...</p>
-              <a href="#" class="read-more">Read More</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+						<div class="col-md-6">
+							<article class="card blog-card h-100 shadow-sm">
+								<img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=533&fit=crop" class="card-img-top blog-image" alt="Wildlife">
+								<div class="card-body d-flex flex-column">
+									<div class="blog-meta">
+										<span class="blog-date">Oct 8, 2025</span>
+										<span class="blog-category">Conservation</span>
+									</div>
+									<h3 class="h5">Protecting Pakistan’s Unique Wildlife</h3>
+									<p class="text-muted mb-4">Species at risk, protected areas, and how travelers can help safeguard biodiversity.</p>
+									<div class="mt-auto d-flex justify-content-between align-items-center">
+										<small class="text-muted"><i class="fas fa-clock me-1"></i>5 min</small>
+										<a href="#" class="text-success fw-semibold text-decoration-none">Read More</a>
+									</div>
+								</div>
+							</article>
+						</div>
 
-    <section id="newsletter" class="newsletter">
-      <div class="container">
-        <div class="newsletter-content">
-          <h2>Stay Updated with Eco-Travel Tips</h2>
-          <p>Subscribe to our newsletter for the latest sustainable travel insights and tour updates</p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit" class="btn-primary">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </section>
+						<div class="col-md-6">
+							<article class="card blog-card h-100 shadow-sm">
+								<img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=800&h=533&fit=crop" class="card-img-top blog-image" alt="Community Tourism">
+								<div class="card-body d-flex flex-column">
+									<div class="blog-meta">
+										<span class="blog-date">Oct 5, 2025</span>
+										<span class="blog-category">Community</span>
+									</div>
+									<h3 class="h5">Community‑Based Tourism: Empowering Villages</h3>
+									<p class="text-muted mb-4">Revenue‑sharing, homestays, and cultural preservation through travel.</p>
+									<div class="mt-auto d-flex justify-content-between align-items-center">
+										<small class="text-muted"><i class="fas fa-clock me-1"></i>3 min</small>
+										<a href="#" class="text-success fw-semibold text-decoration-none">Read More</a>
+									</div>
+								</div>
+							</article>
+						</div>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>Travel Dose</h3>
-            <p>Pakistan's trusted ecotourism brand</p>
-            <p class="slogan">"Explore Pakistan Naturally"</p>
-          </div>
-          <div class="footer-section">
-            <h4>Quick Links</h4>
-            <a href="tours.html">Tours</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="about.html">About Us</a>
-            <a href="blog.html">Eco-Insights</a>
-          </div>
-          <div class="footer-section">
-            <h4>Services</h4>
-            <a href="contact.html">Book a Tour</a>
-            <a href="contact.html">Contact</a>
-            <a href="https://wa.me/923001234567" target="_blank">WhatsApp</a>
-          </div>
-          <div class="footer-section">
-            <h4>Follow Us</h4>
-            <a href="#" target="_blank">YouTube</a>
-            <a href="#" target="_blank">Instagram</a>
-            <a href="#" target="_blank">Facebook</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 Travel Dose (). All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
+						<div class="col-md-6">
+							<article class="card blog-card h-100 shadow-sm">
+								<img src="https://images.unsplash.com/photo-1464822759844-d150baec8a96?w=800&h=533&fit=crop" class="card-img-top blog-image" alt="Zero Waste">
+								<div class="card-body d-flex flex-column">
+									<div class="blog-meta">
+										<span class="blog-date">Oct 3, 2025</span>
+										<span class="blog-category">Tips</span>
+									</div>
+									<h3 class="h5">Zero‑Waste Travel: Your Complete Guide</h3>
+									<p class="text-muted mb-4">Packing, water, meals, and small choices that add up to big impact.</p>
+									<div class="mt-auto d-flex justify-content-between align-items-center">
+										<small class="text-muted"><i class="fas fa-clock me-1"></i>7 min</small>
+										<a href="#" class="text-success fw-semibold text-decoration-none">Read More</a>
+									</div>
+								</div>
+							</article>
+						</div>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+						<!-- Pagination -->
+						<div class="col-12">
+							<nav class="d-flex justify-content-center">
+								<ul class="pagination pagination-rounded">
+									<li class="page-item disabled"><span class="page-link">Prev</span></li>
+									<li class="page-item active"><span class="page-link">1</span></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><a class="page-link" href="#">Next</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+
+				<!-- Sidebar -->
+				<div class="col-lg-4">
+					<div class="bg-white rounded-3 shadow-sm p-4 mb-4">
+						<h5 class="fw-bold mb-3">About Eco‑Insights</h5>
+						<p class="text-muted mb-0">Stories from the road, practical sustainability tips, and updates from our conservation and community partners.</p>
+					</div>
+
+					<div class="bg-white rounded-3 shadow-sm p-4 mb-4">
+						<h6 class="fw-bold mb-3">Popular Tags</h6>
+						<div class="d-flex flex-wrap gap-2">
+							<a href="#" class="badge bg-success">Eco‑Tips</a>
+							<a href="#" class="badge bg-success">Hunza</a>
+							<a href="#" class="badge bg-success">Wildlife</a>
+							<a href="#" class="badge bg-success">Homestays</a>
+							<a href="#" class="badge bg-success">Zero‑Plastic</a>
+						</div>
+					</div>
+
+					<div class="bg-white rounded-3 shadow-sm p-4">
+						<h6 class="fw-bold mb-3">Newsletter</h6>
+						<p class="text-muted">Get monthly eco‑travel tips and tour updates.</p>
+						<form>
+							<div class="input-group mb-3">
+								<input type="email" class="form-control" placeholder="Enter your email" required>
+								<button class="btn btn-success" type="submit">Subscribe</button>
+							</div>
+							<small class="text-muted">We respect your privacy. Unsubscribe anytime.</small>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- CTA -->
+	<section class="py-5 bg-success text-white">
+		<div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
+			<div class="mb-3 mb-lg-0">
+				<h3 class="fw-bold mb-1">Travel with purpose</h3>
+				<p class="mb-0">Plan a responsible adventure with our eco‑certified guides.</p>
+			</div>
+			<div>
+				<a href="contact.html" class="btn btn-light rounded-pill px-4 me-2">Book Now</a>
+				<a href="https://wa.me/923001234567" target="_blank" class="btn btn-outline-light rounded-pill px-4">
+					<i class="fab fa-whatsapp me-2"></i>WhatsApp
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="bg-dark text-white py-5">
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-lg-4">
+					<h4 class="fw-bold mb-4">
+						<a href="./index.html">
+							<img src="./assets/images/logofooter.webp" width="200" alt="">
+						</a>
+					</h4>
+					<p class="mb-4">Pakistan's pioneering ecotourism company, offering sustainable travel experiences that benefit both travelers and local communities.</p>
+					<div class="social-links">
+						<a href="https://youtube.com/@traveldose" target="_blank" class="text-white me-3"><i class="fab fa-youtube fs-5"></i></a>
+						<a href="#" class="text-white me-3"><i class="fab fa-instagram fs-5"></i></a>
+						<a href="#" class="text-white me-3"><i class="fab fa-facebook fs-5"></i></a>
+						<a href="#" class="text-white"><i class="fab fa-tiktok fs-5"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<h5 class="fw-bold mb-4">Destinations</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="./north.html" class="text-white text-decoration-none">Northern Pakistan</a></li>
+						<li class="mb-2"><a href="./south.html" class="text-white text-decoration-none">Southern Pakistan</a></li>
+						<li class="mb-2"><a href="./urban.html" class="text-white text-decoration-none">Urban Nature Camps</a></li>
+						<li class="mb-2"><a href="tours.html" class="text-white text-decoration-none">All Tours</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2">
+					<h5 class="fw-bold mb-4">Company</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="./about.html" class="text-white text-decoration-none">About Us</a></li>
+						<li class="mb-2"><a href="./index.html#sustainability" class="text-white text-decoration-none">Sustainability</a></li>
+						<li class="mb-2"><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+						<li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4">
+					<h5 class="fw-bold mb-4">Contact Info</h5>
+					<ul class="list-unstyled">
+						<li class="mb-3"><i class="fas fa-map-marker-alt me-2"></i>Lahore, Pakistan</li>
+						<li class="mb-3"><i class="fas fa-phone me-2"></i>+92 300 1234567</li>
+						<li class="mb-3"><i class="fas fa-envelope me-2"></i>info@traveldose.pk</li>
+						<li class="mb-3"><i class="fab fa-youtube me-2"></i>YouTube: @traveldose</li>
+					</ul>
+				</div>
+			</div>
+			<hr class="my-4 bg-white">
+			<div class="text-center">
+				<p class="mb-0">&copy; 2025 Travel Dose (). All rights reserved. 
+					<span class="text-success">Explore Pakistan Naturally</span></p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="main.js"></script>
+</body>
 </html>

@@ -262,3 +262,64 @@ The current setup allows anyone to submit data. For production:
 2. Implement rate limiting
 3. Add data validation
 4. Consider using a more secure backend solution
+
+
+
+
+
+function doGet(e) {
+  return ContentService
+    .createTextOutput(JSON.stringify({ ok: true, method: 'GET' }))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+function doPost(e) {
+  try {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+
+    // Collect params from form-data
+    var params = {};
+    if (e && e.parameter) {
+      params = Object.assign(params, e.parameter);
+    }
+
+    // If JSON posted, merge it too
+    if (e && e.postData && e.postData.type &&
+        e.postData.contents && e.postData.type.indexOf('application/json') !== -1) {
+      try {
+        var json = JSON.parse(e.postData.contents);
+        params = Object.assign(params, json);
+      } catch (err) {
+        // ignore JSON parse error; we'll use form params
+      }
+    }
+
+    // Debug (view in Executions log)
+    // Logger.log('Params: ' + JSON.stringify(params));
+
+    // Append row — make sure your Sheet headers are EXACTLY in this order:
+    // Timestamp | Name | Email | Phone | Travelers | Destination | Date | Duration | Budget | Message | Newsletter | Source
+    sheet.appendRow([
+      params.timestamp || new Date().toISOString(),
+      params.name || '',
+      params.email || '',
+      params.phone || '',
+      params.travelers || '',
+      params.destination || '',
+      params.date || '',
+      params.duration || '',
+      params.budget || '',
+      params.message || '',
+      params.newsletter || '',
+      params.source || 'contact_page'
+    ]);
+
+    return ContentService
+      .createTextOutput(JSON.stringify({ success: true }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch (error) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ success: false, error: error.toString() }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
